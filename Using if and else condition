@@ -1,0 +1,32 @@
+#include <iostream>
+using namespace std;
+
+class FB 
+{
+    private:
+    string u_name;
+    int age;
+
+    public:
+    void details()
+    {
+    cout << "Enter Your Username: " << endl;
+    cin >> u_name;
+
+    cout << "Enter Your Age: " << endl;
+    cin >> age;
+
+    if (age>=18)
+    cout << "Loggin Successfully!" << endl;
+
+    else 
+    cout << "Loggin unsuccessfull!" << endl;
+    }
+};
+
+int main()
+{
+    FB f;
+    f.details();
+    return 0;
+}
