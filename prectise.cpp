@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+class student
+{
+    private:
+    string name;
+    int age;
+
+    public:
+    void details()
+    {
+        cout<<"Enter Your Name: "<<endl;
+        cin >> name;
+        
+        cout<<"Enter Your Age: "<<endl;
+        cin >> age;
+
+        cout<<"Name: "<<name<<endl;
+        cout<<"Age: "<<age<<endl;
+
+    }
+};
+
+int main()
+{
+    student s;
+    s.details();
+    return 0;  
+}
